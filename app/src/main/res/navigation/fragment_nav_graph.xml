@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_nav_graph"
+    app:startDestination="@id/discoverFragment">
+
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.rahul.tastyclone.ui.fragments.DiscoverFragment"
+        android:label="discover"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discoverFragment_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myBagFragment"
+        android:name="com.rahul.tastyclone.ui.fragments.MyBagFragment"
+        android:label="my_bag"
+        tools:layout="@layout/fragment_my_bag" >
+        <action
+            android:id="@+id/action_myBagFragment_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myRecipeFragment"
+        android:name="com.rahul.tastyclone.ui.fragments.MyRecipeFragment"
+        android:label="my_recipe"
+        tools:layout="@layout/fragment_my_recipe" >
+        <action
+            android:id="@+id/action_myRecipeFragment_to_recipeDetailsFragment"
+            app:destination="@id/recipeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailsFragment"
+        android:name="com.rahul.tastyclone.ui.fragments.RecipeDetailsFragment"
+        android:label="fragment_recipe_details"
+        tools:layout="@layout/fragment_recipe_details" />
+</navigation>
