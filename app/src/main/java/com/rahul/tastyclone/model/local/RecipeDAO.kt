@@ -6,13 +6,10 @@ import com.rahul.tastyclone.model.remote.ExtendedIngredient
 
 @Dao
 interface RecipeDAO {
+    @Insert
+    suspend fun addRecipe(recipes:List<ExtendedIngredient>)
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun update(extendedIngredient: ExtendedIngredient)
+    @Query("SELECT * FROM  recipe_db")
+    suspend fun getRecipe():List<ExtendedIngredient>
 
-    @Query("SELECT * FROM recipe_db")
-    fun getRecipe():LiveData<List<ExtendedIngredient>>
-
-    @Delete
-    suspend fun deleteRecipe(extendedIngredient: ExtendedIngredient)
 }

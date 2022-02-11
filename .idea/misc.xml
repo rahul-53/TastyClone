@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/TastyClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/TastyClone/app/src/main/res/layout/fragment_discover.xml" value="0.18568840579710144" />
+        <entry key="..\:/TastyClone/app/src/main/res/layout/fragment_discover.xml" value="0.1" />
         <entry key="..\:/TastyClone/app/src/main/res/layout/fragment_my_bag.xml" value="0.18568840579710144" />
         <entry key="..\:/TastyClone/app/src/main/res/layout/fragment_my_recipe.xml" value="0.18568840579710144" />
         <entry key="..\:/TastyClone/app/src/main/res/layout/fragment_recipe_details.xml" value="0.1" />
+        <entry key="..\:/TastyClone/app/src/main/res/layout/item_layout.xml" value="0.10182370820668693" />
         <entry key="..\:/TastyClone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.10462962962962963" />
       </map>
     </option>
